@@ -1,0 +1,8 @@
+spring:
+  datasource:
+    #    driverClassName: oracle.jdbc.driver.OracleDriver
+    username: C##TEST
+    password: 123456
+    type: com.alibaba.druid.pool.DruidDataSource
+    url: jdbc:p6spy:oracle:thin:@localhost:1521:ORCL
+    driver-class-name: com.p6spy.engine.spy.P6SpyDriver

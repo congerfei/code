@@ -1,0 +1,32 @@
+﻿1. actitvti 的导包
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.activiti.cloud.dependencies</groupId>
+                <artifactId>activiti-cloud-dependencies</artifactId>
+                <version>7.0.0.Beta3</version>
+                <scope>import</scope>
+                <type>pom</type>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+       <!-- activiti -->
+        <dependency>
+            <groupId>org.activiti</groupId>
+            <artifactId>activiti-spring-boot-starter</artifactId>
+        </dependency>
+
+
+2.配置信息（数据源肯定是必须要的）
+#spring
+  #Activiti property configuration  ---ActivitiProperties
+  activiti:
+    database-schema-update: true
+    history-level: full
+    db-history-used: true
+
+
+3.直接启动
+C##ACTITVTI 中 正常生成了25张表
+
