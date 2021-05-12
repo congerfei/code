@@ -43,7 +43,7 @@ public class Generator {
         // 全局配置
         GlobalConfig gc = new GlobalConfig();
         String projectPath = System.getProperty("user.dir");
-        gc.setOutputDir(projectPath + "/src/main/java");
+        gc.setOutputDir(projectPath + "/admin/src/main/java");
         gc.setAuthor("xl");
         gc.setOpen(false);
         // gc.setSwagger2(true); 实体属性 Swagger2 注解
@@ -84,7 +84,7 @@ public class Generator {
             @Override
             public String outputFile(TableInfo tableInfo) {
                 // 自定义输出文件名 ， 如果你 Entity 设置了前后缀、此处注意 xml 的名称会跟着发生变化！！
-                return projectPath + "/src/main/java/com/xl/admin/" + pc.getModuleName()
+                return projectPath + "/admin/src/main/java/com/xl/admin/" + pc.getModuleName()
                         + "/mapper/" + tableInfo.getEntityName() + "Mapper" + StringPool.DOT_XML;
             }
         });

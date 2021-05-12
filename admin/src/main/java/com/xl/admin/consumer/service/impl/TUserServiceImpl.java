@@ -17,4 +17,5 @@ import org.springframework.stereotype.Service;
 @Service
 public class TUserServiceImpl extends ServiceImpl<TUserMapper, TUser> implements ITUserService {
 
+
 }
