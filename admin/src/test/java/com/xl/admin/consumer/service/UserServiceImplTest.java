@@ -5,11 +5,11 @@ import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.xl.admin.consumer.entity.TUser;
 import com.xl.admin.consumer.mapper.TUserMapper;
 import com.xl.admin.consumer.service.impl.TUserServiceImpl;
-import org.junit.Test;
-import org.junit.runner.RunWith;
+
+import org.junit.jupiter.api.Test;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import org.springframework.util.Assert;
 
 import javax.annotation.Resource;
@@ -17,7 +17,6 @@ import java.util.*;
 
 
 @SpringBootTest
-@RunWith(SpringJUnit4ClassRunner.class)
 public class UserServiceImplTest {
 
     @Autowired

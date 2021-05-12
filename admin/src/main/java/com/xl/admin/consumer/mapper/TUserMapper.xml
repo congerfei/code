@@ -17,10 +17,10 @@
         LGC_SN, USER_ID, USER_NAME, CREATE_DT, UPDATE_DT, "PASSWORD", REMAKE, DELETED, INS_ID
     </sql>
 
-<!--    <select id="selectUserAndInsByUserID" parameterType="string" resultType="com.xl.admin.consumer.entity.TUser">-->
-<!--            select LGC_SN, USER_ID, USER_NAME, CREATE_DT, UPDATE_DT, "PASSWORD", REMAKE, DELETED, t.INS_ID ,INS_NM-->
-<!--            from T_USER t left join  CFG_T_INS_INF c on t.INS_ID= c.INS_ID-->
-<!--            where t.USER_ID = #{lgcSn,jdbcType=VARCHAR}-->
-<!--    </select>-->
+    <select id="selectUserAndInsByUserID" parameterType="string" resultType="com.xl.admin.consumer.entity.TUser">
+            select LGC_SN, USER_ID, USER_NAME, CREATE_DT, UPDATE_DT, "PASSWORD", REMAKE, DELETED, t.INS_ID ,INS_NM
+            from T_USER t left join  CFG_T_INS_INF c on t.INS_ID= c.INS_ID
+            where t.USER_ID = #{lgcSn,jdbcType=VARCHAR}
+    </select>
 
 </mapper>

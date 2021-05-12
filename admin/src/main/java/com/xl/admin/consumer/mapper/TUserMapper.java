@@ -15,7 +15,7 @@ import org.apache.ibatis.annotations.Mapper;
 @Mapper
 public interface TUserMapper extends BaseMapper<TUser> {
 
-//    public TUser selectUserAndInsByUserID(String lgcSn);
+    public TUser selectUserAndInsByUserID(String lgcSn);
 
 
 }

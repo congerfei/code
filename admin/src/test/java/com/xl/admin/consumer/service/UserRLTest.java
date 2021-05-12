@@ -3,14 +3,13 @@ package com.xl.admin.consumer.service;
 
 import com.xl.admin.consumer.entity.TUser;
 import com.xl.admin.consumer.mapper.TUserMapper;
-import org.junit.Test;
-import org.junit.runner.RunWith;
+
+import org.junit.jupiter.api.Test;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 @SpringBootTest
-@RunWith(SpringJUnit4ClassRunner.class)
 public class UserRLTest {
 
     @Autowired
@@ -29,8 +28,8 @@ public class UserRLTest {
      */
     @Test
     public void test1() {
-//        TUser tUser = tUserMapper.selectUserAndInsByUserID("13714858284");
-//        System.out.println(tUser);
+        TUser tUser = tUserMapper.selectUserAndInsByUserID("13714858284");
+        System.out.println(tUser);
 
     }
 }
