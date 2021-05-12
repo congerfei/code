@@ -50,6 +50,19 @@
 
     </dependencies>
 
+    <dependencyManagement>
+        <dependencies>
+            <!--点进去看，发现集成了springboot和springcloud-->
+            <dependency>
+                <groupId>org.activiti.cloud.dependencies</groupId>
+                <artifactId>activiti-cloud-dependencies</artifactId>
+                <version>7.0.0.Beta2</version>
+                <scope>import</scope>
+                <type>pom</type>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
 
 
 
