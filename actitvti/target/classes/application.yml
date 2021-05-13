@@ -1,0 +1,20 @@
+spring:
+  datasource:
+    username: ACTIVITI
+    password: 123456
+    type: com.alibaba.druid.pool.DruidDataSource
+    url: jdbc:oracle:thin:@localhost:1521/XE
+    driver-class-name: oracle.jdbc.driver.OracleDriver
+
+#spring
+  #Activiti property configuration  ---ActivitiProperties
+  activiti:
+    database-schema-update: true  #如果存在相应的表直接使用，如果不存在则创建  drop-create / true
+    history-level: full  #表示哪种情况下使用历史表，这里配置为full表示全部记录历史，方便绘制流程图
+    db-history-used: true
+
+logging:
+  level:
+    org.activiti.engine.impl.persistence.entity: debug
+
+
