@@ -42,7 +42,7 @@ public class TUser implements Serializable {
      * 名称
      */
     @TableField("USER_NAME")
-    private String name;
+    private String UserName;
 
     /**
      * 创建时间
@@ -74,6 +74,12 @@ public class TUser implements Serializable {
     //@TableLogic  去掉逻辑删除
     @TableField("DELETED")
     private Integer deleted;
+
+    /**
+     * 用户机构
+     */
+    @TableField("INS_ID")
+    private String insId;
 
 
 }

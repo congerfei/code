@@ -5,7 +5,9 @@ import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.xl.admin.consumer.entity.TUser;
 import com.xl.admin.consumer.mapper.TUserMapper;
 import com.xl.admin.consumer.service.impl.TUserServiceImpl;
+
 import org.junit.jupiter.api.Test;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.util.Assert;
@@ -24,7 +26,7 @@ public class UserServiceImplTest {
     TUserMapper tUserMapper;
 
     @Test
-    void contextLoads() {
+    public void contextLoads() {
 
 
     }
@@ -41,7 +43,7 @@ public class UserServiceImplTest {
         tUser.setLgcSn(UUID.randomUUID().toString());
         tUser.setCreateDt(new Date());
         tUser.setUserId("14201000000");
-        tUser.setName("湖北");
+        tUser.setUserName("湖北");
         boolean save = userService.save(tUser);
         System.out.println("是否保存成功：" + save);
     }
@@ -53,7 +55,7 @@ public class UserServiceImplTest {
             tUser.setLgcSn(UUID.randomUUID().toString());
             tUser.setCreateDt(new Date());
             tUser.setUserId(14201000000L + i + "");
-            tUser.setName("湖北" + i);
+            tUser.setUserName("湖北" + i);
             boolean save = userService.save(tUser);
         }
 

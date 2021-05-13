@@ -27,6 +27,7 @@
             <groupId>com.oracle.database.jdbc</groupId>
             <artifactId>ojdbc8</artifactId>
             <scope>runtime</scope>
+            <version>19.8.0.0</version>
         </dependency>
         <!--druid数据库连接池-->
         <dependency>
@@ -48,6 +49,19 @@
         </dependency>
 
     </dependencies>
+
+    <dependencyManagement>
+        <dependencies>
+            <!--点进去看，发现集成了springboot和springcloud-->
+            <dependency>
+                <groupId>org.activiti.cloud.dependencies</groupId>
+                <artifactId>activiti-cloud-dependencies</artifactId>
+                <version>7.0.0.Beta2</version>
+                <scope>import</scope>
+                <type>pom</type>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
 
 
 
