@@ -18,7 +18,8 @@ import javax.annotation.Resource;
 
 @RestController
 @RequestMapping("/activiti")
-class ActivitiController {
+public class ActivitiController {
+
         @Resource
         private ProcessRuntime processRuntime;
         @Resource
