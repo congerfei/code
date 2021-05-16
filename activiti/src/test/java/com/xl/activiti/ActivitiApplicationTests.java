@@ -1,22 +1,22 @@
-package com.xl.actitvti;
+package com.xl.activiti;
 
 import org.activiti.engine.*;
 import org.activiti.engine.repository.Deployment;
+import org.activiti.engine.repository.ProcessDefinition;
+import org.activiti.engine.repository.ProcessDefinitionQuery;
 import org.activiti.engine.runtime.ProcessInstance;
 import org.activiti.engine.task.Task;
-import org.junit.Test;
-import org.junit.runner.RunWith;
+import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.test.context.junit4.SpringRunner;
-
 import javax.sql.DataSource;
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 @SpringBootTest
-@RunWith(SpringRunner.class)//一定要带，不然得不到很多bean
-public class ActitvtiApplicationTests {
+public class ActivitiApplicationTests {
 
     @Autowired
     DataSource dataSource;
@@ -126,6 +126,15 @@ public class ActitvtiApplicationTests {
     public void test4() {
         taskService.complete("b6dd62a7-b0c5-11eb-ada2-4cedfb690a53");
     }
+
+    @Test
+    public void test5() {
+
+
+
+    }
+
+
 
 
 

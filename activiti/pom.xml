@@ -9,13 +9,14 @@
     </parent>
 
     <groupId>com.xl</groupId>
-    <artifactId>actitvti</artifactId>
+    <artifactId>activiti</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>actitvti</name>
+    <name>activiti</name>
     <description>Demo project for Spring Boot</description>
     <properties>
         <java.version>1.8</java.version>
     </properties>
+
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -46,23 +47,29 @@
         <dependency>
             <groupId>org.activiti</groupId>
             <artifactId>activiti-spring-boot-starter</artifactId>
+            <version>7.1.0.M2</version>
+        </dependency>
+
+        <dependency>
+            <groupId>commons-io</groupId>
+            <artifactId>commons-io</artifactId>
+            <version>2.6</version>
         </dependency>
 
     </dependencies>
 
-    <dependencyManagement>
-        <dependencies>
-            <!--点进去看，发现集成了springboot和springcloud-->
-            <dependency>
-                <groupId>org.activiti.cloud.dependencies</groupId>
-                <artifactId>activiti-cloud-dependencies</artifactId>
-                <version>7.0.0.Beta2</version>
-                <scope>import</scope>
-                <type>pom</type>
-            </dependency>
-        </dependencies>
-    </dependencyManagement>
-
+<!--    <dependencyManagement>-->
+<!--        <dependencies>-->
+<!--            &lt;!&ndash;点进去看，发现集成了springboot和springcloud&ndash;&gt;-->
+<!--            <dependency>-->
+<!--                <groupId>org.activiti.cloud.dependencies</groupId>-->
+<!--                <artifactId>activiti-cloud-dependencies</artifactId>-->
+<!--                <version>7.0.0.Beta2</version>-->
+<!--                <scope>import</scope>-->
+<!--                <type>pom</type>-->
+<!--            </dependency>-->
+<!--        </dependencies>-->
+<!--    </dependencyManagement>-->
 
 
 
