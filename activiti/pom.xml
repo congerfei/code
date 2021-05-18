@@ -9,9 +9,9 @@
     </parent>
 
     <groupId>com.xl</groupId>
-    <artifactId>actitvti</artifactId>
+    <artifactId>activiti</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>actitvti</name>
+    <name>activiti</name>
     <description>Demo project for Spring Boot</description>
     <properties>
         <java.version>1.8</java.version>
