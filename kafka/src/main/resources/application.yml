@@ -1,3 +1,9 @@
+#可参照spring官网，以下是最简单的配置
 spring:
-  kafka:
-    bootstrap-servers: 127.0.0.1:9092
+    kafka:
+        # 生产者
+        producer:
+            bootstrap-servers: 127.0.0.1:9092
+        # 消费者
+        consumer:
+            group-id: foo

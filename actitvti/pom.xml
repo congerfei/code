@@ -19,7 +19,7 @@
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter</artifactId>
+            <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
 
         <!--oracle-->
@@ -46,22 +46,29 @@
         <dependency>
             <groupId>org.activiti</groupId>
             <artifactId>activiti-spring-boot-starter</artifactId>
+            <version>7.0.0.Beta3</version>
         </dependency>
 
     </dependencies>
 
-    <dependencyManagement>
-        <dependencies>
-            <!--点进去看，发现集成了springboot和springcloud-->
-            <dependency>
-                <groupId>org.activiti.cloud.dependencies</groupId>
-                <artifactId>activiti-cloud-dependencies</artifactId>
-                <version>7.0.0.Beta2</version>
-                <scope>import</scope>
-                <type>pom</type>
-            </dependency>
-        </dependencies>
-    </dependencyManagement>
+<!--    <dependencyManagement>-->
+<!--        <dependencies>-->
+<!--            &lt;!&ndash;点进去看，发现集成了springboot和springcloud&ndash;&gt;-->
+<!--            <dependency>-->
+<!--                <groupId>org.activiti.cloud.dependencies</groupId>-->
+<!--                <artifactId>activiti-cloud-dependencies</artifactId>-->
+<!--                <version>7.0.0.Beta2</version>-->
+<!--                <scope>import</scope>-->
+<!--                <type>pom</type>-->
+<!--                <exclusions>-->
+<!--                    <exclusion>-->
+<!--                        <groupId>org.springframework.boot</groupId>-->
+<!--                        <artifactId>spring-boot-starter-web</artifactId>-->
+<!--                    </exclusion>-->
+<!--                </exclusions>-->
+<!--            </dependency>-->
+<!--        </dependencies>-->
+<!--    </dependencyManagement>-->
 
 
 
