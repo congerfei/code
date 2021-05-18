@@ -15,7 +15,7 @@
     </properties>
 
     <modules>
-        <module>actitvti</module>
+        <module>activiti</module>
         <module>admin</module>
         <module>client</module>
         <module>eureka</module>

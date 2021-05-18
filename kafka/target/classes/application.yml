@@ -1,12 +1,3 @@
 spring:
-    kafka:
-        # 生产者
-        producer:
-            bootstrap-servers: 127.0.0.1:9092
-#            key-serializer: org.apache.kafka.common.serialization.StringSerializer
-#            value-serializer: org.apache.kafka.common.serialization.StringSerializer
-        # 消费者
-        consumer:
-            group-id: foo
-#            auto-offset-reset: earliest
-#            bootstrap-servers: 127.0.0.1:9092
+  kafka:
+    bootstrap-servers: 127.0.0.1:9092
