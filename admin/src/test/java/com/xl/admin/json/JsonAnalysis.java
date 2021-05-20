@@ -1,9 +1,11 @@
-package com.xl.admin.util.json;
+package com.xl.admin.json;
 
 import com.alibaba.fastjson.JSONObject;
 import org.junit.jupiter.api.Test;
+import org.springframework.boot.test.context.SpringBootTest;
 
 
+@SpringBootTest
 public class JsonAnalysis {
 
     /**

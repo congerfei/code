@@ -21,6 +21,7 @@
         <module>eureka</module>
         <module>gateway</module>
         <module>kafka</module>
+        <module>provider</module>
     </modules>
 
 
@@ -52,4 +53,26 @@
             <url>https://maven.aliyun.com/repository/public/</url>
         </repository>
     </repositories>
+
+    <build>
+        <!--mapper文件一般放在java文件下，不是在配置文件下，需要改变路径-->
+        <resources>
+            <resource>
+                <directory>src/main/java</directory>
+                <includes>
+                    <include>**/*.xml</include>
+                </includes>
+                <filtering>true</filtering>
+            </resource>
+            <resource>
+                <directory>src/main/resources</directory>
+                <includes>
+                    <include>**/*.xml</include>
+                    <include>**/*.yml</include>
+                </includes>
+                <filtering>true</filtering>
+            </resource>
+        </resources>
+    </build>
+
 </project>

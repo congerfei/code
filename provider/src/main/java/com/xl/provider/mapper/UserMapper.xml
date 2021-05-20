@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.xl.provider.mapper.UserMapper">
+
+    <resultMap id="BaseResultMap" type="com.xl.provider.pojo.User">
+        <id column="LGC_SN" property="lgcSn" jdbcType="VARCHAR"/>
+        <id column="USER_ID" property="userId" jdbcType="VARCHAR"/>
+        <id column="USER_NM" property="userNm" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <select id="selectUserById" parameterType="String" resultMap="BaseResultMap">
+        select * from TUSER where LGC_SN = #{id}
+    </select>
+
+    <insert id="insert" parameterType="com.xl.provider.pojo.User" >
+        insert into TUSER  (LGC_SN,USER_ID,USER_NM) values (#{lgcSn,jdbcType=VARCHAR},#{userId,jdbcType=VARCHAR},#{userNm,jdbcType=VARCHAR})
+    </insert>
+
+</mapper>
