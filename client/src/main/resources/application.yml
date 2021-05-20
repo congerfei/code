@@ -4,8 +4,11 @@ server:
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://localhost:8071/eureka/
+      defaultZone: http://localhost:7001/eureka/
+  instance:
+    instance-id: client #将status栏的 （类似 DESKTOP-2021RRP:client:8081 ） 换成 这个id
+    prefer-ip-address: true  # 鼠标移到status栏，左下角默认是类似 DESKTOP-2021RRP:client:8081 ，改成IP地址显示
 
 spring:
   application:
-    name: service-hi
+    name: client
