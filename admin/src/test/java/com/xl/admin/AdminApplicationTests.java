@@ -2,6 +2,7 @@ package com.xl.admin;
 
 
 
+import org.apache.ibatis.session.SqlSessionFactory;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -14,6 +15,9 @@ class AdminApplicationTests {
 
     @Autowired
     DataSource dataSource;
+
+    @Autowired
+    SqlSessionFactory sqlSessionFactory;
 
     @Test
     void contextLoads() {
