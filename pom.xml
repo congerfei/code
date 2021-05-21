@@ -23,6 +23,7 @@
         <module>kafka</module>
         <module>provider</module>
         <module>common-xl</module>
+        <module>springboot-zookeeper</module>
     </modules>
 
 
