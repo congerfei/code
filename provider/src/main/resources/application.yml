@@ -1,13 +1,28 @@
 spring:
   application:
     name: provider
+  zipkin:
+    base-url: http://localhost:9411/
+  sleuth:
+    sampler:
+      probability: 1
 
   datasource:
-    username: TEST
-    password: test
+    username: C##TEST   #家里的话换成C##TEST   笔记本用TEST
+    password: 123456    #家里的话换成C##TEST   笔记本用test
     type: com.alibaba.druid.pool.DruidDataSource
-    url: jdbc:oracle:thin:@localhost:1521/XE
+    url: jdbc:oracle:thin:@localhost:1521/ORCL    #  家里用ORCL   笔记本用XE
     driver-class-name: oracle.jdbc.driver.OracleDriver
+
+
+
+
+#  datasource:
+#    username: C##TEST   #家里的话换成C##TEST   笔记本用TEST
+#    password: 123456    #家里的话换成C##TEST   笔记本用test
+#    type: com.alibaba.druid.pool.DruidDataSource
+#    url: jdbc:oracle:thin:@localhost:1521/ORCL    #  家里用ORCL   笔记本用XE
+#    driver-class-name: oracle.jdbc.driver.OracleDriver
 
 
 eureka:

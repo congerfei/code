@@ -85,11 +85,11 @@
             <version>1.2.74</version>
         </dependency>
 
-        <dependency>
-            <groupId>QRCode</groupId>
-            <artifactId>QRCode</artifactId>
-            <version>3.0</version>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>QRCode</groupId>-->
+<!--            <artifactId>QRCode</artifactId>-->
+<!--            <version>3.0.0</version>-->
+<!--        </dependency>-->
 
         <!--JWT的两个包-->
         <dependency>
