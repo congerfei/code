@@ -5,7 +5,7 @@ package com.xl.test.thread;
  * date :2020/12/17 20:35
  * description:多线程
  *      1.继承Thread，重写run（）方法，调用start（）开启线程
- *         总结： 线程开启不一定立即执行，油cpu调度
+ *         总结： 线程开启不一定立即执行，由cpu调度
  * History:
  * <author>      <time>     <version>       <desc>
  * 作者姓名      修改时间    版本号          描述

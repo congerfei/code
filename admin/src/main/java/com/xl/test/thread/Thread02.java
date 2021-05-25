@@ -3,7 +3,7 @@ package com.xl.test.thread;
 /**
  * Author: xl
  * date :2020/12/17 20:53
- * description: 实现Runnable接口 实现run方法，并将对象传入  new Thread（） 中 执行start（）方法
+ * description: 2.实现Runnable接口 实现run方法，并将对象传入  new Thread（） 中 执行start（）方法
  *          总结：Thread类也是实现了Runnable ，所有只要实现了Runnable接口就是一条线程
  *
  * History:
