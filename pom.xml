@@ -20,7 +20,7 @@
         <module>client</module>
         <module>eureka</module>
         <module>gateway</module>
-        <module>kafka</module>
+        <module>jms</module>
         <module>provider</module>
         <module>common-xl</module>
         <module>springboot-zookeeper</module>
