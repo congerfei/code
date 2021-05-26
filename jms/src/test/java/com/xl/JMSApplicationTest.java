@@ -6,7 +6,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 
 
 @SpringBootTest
-public class KafkaApplicationTest {
+public class JMSApplicationTest {
 
 
     @Test

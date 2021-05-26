@@ -2,13 +2,12 @@ package com.xl;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.kafka.annotation.KafkaListener;
 
 @SpringBootApplication
-public class KafkaApplication {
+public class JMSApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(KafkaApplication.class, args);
+        SpringApplication.run(JMSApplication.class, args);
     }
 
 
