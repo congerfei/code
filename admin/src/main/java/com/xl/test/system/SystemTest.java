@@ -16,6 +16,8 @@ package com.xl.test.system;
 public class SystemTest {
     public static void main(String[] args) {
         System.out.println(System.currentTimeMillis());
-        System.out.println(System.getenv());//系统的环境变量
+        System.out.println(System.getenv());//系统的环境变量axc
+
+        System.getProperties().list(System.out);
     }
 }

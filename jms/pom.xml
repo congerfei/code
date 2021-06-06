@@ -10,7 +10,7 @@
     </parent>
 
     <groupId>com.xl</groupId>
-    <artifactId>kafka</artifactId>
+    <artifactId>jms</artifactId>
     <version>1.0-SNAPSHOT</version>
 
 
